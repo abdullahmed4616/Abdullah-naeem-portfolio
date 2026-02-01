@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #050510;
+  --color-foreground: #e0e0ff;
+  --color-accent: #4f7df7;
+  --color-accent-light: #7ba3ff;
+  --color-surface: rgba(15, 15, 40, 0.7);
+  --font-sans: system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050510;
+}
+::-webkit-scrollbar-thumb {
+  background: #4f7df7;
+  border-radius: 3px;
+}
+
+/* Star layers for parallax */
+.stars-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Glow text */
+.glow {
+  text-shadow: 0 0 20px rgba(79, 125, 247, 0.5), 0 0 40px rgba(79, 125, 247, 0.2);
+}
+
+/* Section divider gradient */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #4f7df7, transparent);
+  margin: 0 auto;
+  width: 60%;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* Nebula glow backgrounds */
+.nebula-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.15;
+  pointer-events: none;
+}
