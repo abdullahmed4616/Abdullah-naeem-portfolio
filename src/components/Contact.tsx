@@ -42,7 +42,7 @@ export default function Contact() {
           Get In <span className="text-[#4f7df7]">Touch</span>
         </h2>
         <p
-          className={`text-center text-[#e0e0ff]/50 mb-16 tracking-widest text-sm uppercase transition-all duration-700 delay-100 ${
+          className={`text-center text-[#e0e0ff]/50 mb-12 mt-2 tracking-widest text-sm uppercase transition-all duration-700 delay-100 ${
             visible ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -51,50 +51,50 @@ export default function Contact() {
 
         <form
           onSubmit={(e) => e.preventDefault()}
-          className={`space-y-6 transition-all duration-700 delay-200 ${
+          className={`space-y-8 transition-all duration-700 delay-200 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-8">
             <div>
-              <label className="block text-sm text-[#e0e0ff]/60 mb-2">Name</label>
+              <label className="block text-sm text-[#e0e0ff]/60 mb-3">Name</label>
               <input
                 type="text"
-                className="w-full bg-[#0a0a2a]/60 border border-[#4f7df7]/20 rounded-xl px-4 py-3 text-[#e0e0ff] placeholder-[#e0e0ff]/30 focus:outline-none focus:border-[#4f7df7]/60 transition-colors backdrop-blur-sm"
+                className="w-full bg-[#0a0a2a]/60 border border-[#4f7df7]/20 rounded-xl px-5 py-4 text-[#e0e0ff] placeholder-[#e0e0ff]/30 focus:outline-none focus:border-[#4f7df7]/60 transition-colors backdrop-blur-sm"
                 placeholder="Your name"
               />
             </div>
             <div>
-              <label className="block text-sm text-[#e0e0ff]/60 mb-2">Email</label>
+              <label className="block text-sm text-[#e0e0ff]/60 mb-3">Email</label>
               <input
                 type="email"
-                className="w-full bg-[#0a0a2a]/60 border border-[#4f7df7]/20 rounded-xl px-4 py-3 text-[#e0e0ff] placeholder-[#e0e0ff]/30 focus:outline-none focus:border-[#4f7df7]/60 transition-colors backdrop-blur-sm"
+                className="w-full bg-[#0a0a2a]/60 border border-[#4f7df7]/20 rounded-xl px-5 py-4 text-[#e0e0ff] placeholder-[#e0e0ff]/30 focus:outline-none focus:border-[#4f7df7]/60 transition-colors backdrop-blur-sm"
                 placeholder="your@email.com"
               />
             </div>
           </div>
 
           <div>
-            <label className="block text-sm text-[#e0e0ff]/60 mb-2">Subject</label>
+            <label className="block text-sm text-[#e0e0ff]/60 mb-3">Subject</label>
             <input
               type="text"
-              className="w-full bg-[#0a0a2a]/60 border border-[#4f7df7]/20 rounded-xl px-4 py-3 text-[#e0e0ff] placeholder-[#e0e0ff]/30 focus:outline-none focus:border-[#4f7df7]/60 transition-colors backdrop-blur-sm"
+              className="w-full bg-[#0a0a2a]/60 border border-[#4f7df7]/20 rounded-xl px-5 py-4 text-[#e0e0ff] placeholder-[#e0e0ff]/30 focus:outline-none focus:border-[#4f7df7]/60 transition-colors backdrop-blur-sm"
               placeholder="What's this about?"
             />
           </div>
 
           <div>
-            <label className="block text-sm text-[#e0e0ff]/60 mb-2">Message</label>
+            <label className="block text-sm text-[#e0e0ff]/60 mb-3">Message</label>
             <textarea
               rows={6}
-              className="w-full bg-[#0a0a2a]/60 border border-[#4f7df7]/20 rounded-xl px-4 py-3 text-[#e0e0ff] placeholder-[#e0e0ff]/30 focus:outline-none focus:border-[#4f7df7]/60 transition-colors backdrop-blur-sm resize-none"
+              className="w-full bg-[#0a0a2a]/60 border border-[#4f7df7]/20 rounded-xl px-5 py-4 text-[#e0e0ff] placeholder-[#e0e0ff]/30 focus:outline-none focus:border-[#4f7df7]/60 transition-colors backdrop-blur-sm resize-none"
               placeholder="Tell me about your project..."
             />
           </div>
 
           <button
             type="submit"
-            className="w-full py-4 bg-[#4f7df7] text-white rounded-xl font-medium hover:bg-[#3a66d4] transition-all duration-300 hover:shadow-[0_0_30px_rgba(79,125,247,0.4)] cursor-pointer"
+            className="w-full py-5 bg-[#4f7df7] text-white rounded-xl font-medium hover:bg-[#3a66d4] transition-all duration-300 hover:shadow-[0_0_30px_rgba(79,125,247,0.4)] cursor-pointer"
           >
             Send Message
           </button>

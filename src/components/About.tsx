@@ -39,7 +39,7 @@ export default function About() {
           About <span className="text-[#4f7df7]">Me</span>
         </h2>
         <p
-          className={`text-center text-[#e0e0ff]/50 mb-16 tracking-widest text-sm uppercase transition-all duration-700 delay-100 ${
+          className={`text-center text-[#e0e0ff]/50 mb-12 mt-2 tracking-widest text-sm uppercase transition-all duration-700 delay-100 ${
             visible ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -53,14 +53,14 @@ export default function About() {
               visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
             }`}
           >
-            <div className="bg-[#0a0a2a]/60 backdrop-blur-sm border border-[#4f7df7]/15 rounded-2xl p-8">
-              <p className="text-[#e0e0ff]/80 leading-relaxed mb-6 text-justify">
+            <div className="bg-[#0a0a2a]/60 backdrop-blur-sm border border-[#4f7df7]/15 rounded-2xl p-10">
+              <p className="text-[#e0e0ff]/80 leading-relaxed mb-8 text-justify">
                 I am a passionate full-stack developer with a deep love for crafting
                 elegant, performant web applications. With a keen eye for design and a
                 strong foundation in modern technologies, I transform ideas into
                 reality.
               </p>
-              <p className="text-[#e0e0ff]/80 leading-relaxed mb-6 text-justify">
+              <p className="text-[#e0e0ff]/80 leading-relaxed mb-8 text-justify">
                 My journey in software development has taken me through diverse
                 projects ranging from real-time applications to scalable cloud
                 architectures. I thrive in environments that challenge me to grow
@@ -80,10 +80,10 @@ export default function About() {
               visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
             }`}
           >
-            <div className="space-y-5">
+            <div className="space-y-6">
               {skills.map((skill, i) => (
                 <div key={skill.name}>
-                  <div className="flex justify-between mb-2">
+                  <div className="flex justify-between mb-3">
                     <span className="text-sm text-[#e0e0ff]/80">{skill.name}</span>
                     <span className="text-sm text-[#7ba3ff]">{skill.level}%</span>
                   </div>

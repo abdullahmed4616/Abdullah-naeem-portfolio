@@ -80,12 +80,12 @@ export default function Projects() {
           Constellations of code
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-10">
           {projects.map((project, i) => (
             <a
               key={project.title}
               href={project.link}
-              className={`group block bg-[#0a0a2a]/60 backdrop-blur-sm border border-[#4f7df7]/15 rounded-2xl p-8 transition-all duration-500 hover:border-[#4f7df7]/40 hover:shadow-[0_0_40px_rgba(79,125,247,0.1)] hover:-translate-y-1 ${
+              className={`group block bg-[#0a0a2a]/60 backdrop-blur-sm border border-[#4f7df7]/15 rounded-2xl p-10 transition-all duration-500 hover:border-[#4f7df7]/40 hover:shadow-[0_0_40px_rgba(79,125,247,0.1)] hover:-translate-y-1 ${
                 visible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-8"
@@ -93,7 +93,7 @@ export default function Projects() {
               style={{ transitionDelay: `${200 + i * 150}ms` }}
             >
               {/* Project icon placeholder */}
-              <div className="w-12 h-12 rounded-xl bg-[#4f7df7]/10 border border-[#4f7df7]/20 flex items-center justify-center mb-6 group-hover:bg-[#4f7df7]/20 transition-colors">
+              <div className="w-12 h-12 rounded-xl bg-[#4f7df7]/10 border border-[#4f7df7]/20 flex items-center justify-center mb-8 group-hover:bg-[#4f7df7]/20 transition-colors">
                 <svg
                   width="24"
                   height="24"
@@ -106,17 +106,17 @@ export default function Projects() {
                 </svg>
               </div>
 
-              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-[#7ba3ff] transition-colors">
+              <h3 className="text-xl font-semibold text-white mb-4 group-hover:text-[#7ba3ff] transition-colors">
                 {project.title}
               </h3>
-              <p className="text-[#e0e0ff]/60 leading-relaxed mb-6 text-sm text-justify">
+              <p className="text-[#e0e0ff]/60 leading-relaxed mb-8 text-sm text-justify">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-3">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-3 py-1 rounded-full bg-[#4f7df7]/10 text-[#7ba3ff] border border-[#4f7df7]/20"
+                    className="text-xs px-4 py-1.5 rounded-full bg-[#4f7df7]/10 text-[#7ba3ff] border border-[#4f7df7]/20"
                   >
                     {tag}
                   </span>
