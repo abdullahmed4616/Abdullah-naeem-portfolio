@@ -39,7 +39,7 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-8 py-5 flex items-center justify-between">
         <a
           href="#home"
           className="text-xl font-bold tracking-wider glow"
@@ -49,7 +49,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop */}
-        <div className="hidden md:flex gap-8">
+        <div className="hidden md:flex gap-10">
           {links.map((l) => (
             <a
               key={l.href}
@@ -79,13 +79,13 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#050510]/95 backdrop-blur-md border-b border-[#4f7df7]/20 px-6 pb-4">
+        <div className="md:hidden bg-[#050510]/95 backdrop-blur-md border-b border-[#4f7df7]/20 px-8 pb-6 pt-2">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setMenuOpen(false)}
-              className={`block py-3 text-sm tracking-widest uppercase ${
+              className={`block py-4 text-sm tracking-widest uppercase ${
                 active === l.href.slice(1)
                   ? "text-[#7ba3ff]"
                   : "text-[#e0e0ff]/60"

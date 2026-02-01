@@ -42,35 +42,35 @@ export default function Hero() {
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
-        <p className="text-[#7ba3ff] text-sm tracking-[0.3em] uppercase mb-4">
+        <p className="text-[#7ba3ff] text-sm tracking-[0.3em] uppercase mb-6">
           Welcome to my universe
         </p>
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 glow">
+        <h1 className="text-5xl md:text-7xl font-bold mb-8 glow">
           <span className="text-white">Abdullah</span>{" "}
           <span className="text-[#4f7df7]">Naeem</span>
         </h1>
-        <p className="text-xl md:text-2xl text-[#e0e0ff]/70 mb-8 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-[#e0e0ff]/70 mb-12 max-w-2xl mx-auto leading-relaxed">
           Full-Stack Developer crafting digital experiences
           <br />
           that push boundaries and inspire.
         </p>
-        <div className="flex gap-4 justify-center flex-wrap">
+        <div className="flex gap-6 justify-center flex-wrap">
           <a
             href="#projects"
-            className="px-8 py-3 bg-[#4f7df7] text-white rounded-full font-medium hover:bg-[#3a66d4] transition-colors duration-300 hover:shadow-[0_0_30px_rgba(79,125,247,0.4)]"
+            className="px-10 py-4 bg-[#4f7df7] text-white rounded-full font-medium hover:bg-[#3a66d4] transition-colors duration-300 hover:shadow-[0_0_30px_rgba(79,125,247,0.4)]"
           >
             View My Work
           </a>
           <a
             href="#contact"
-            className="px-8 py-3 border border-[#4f7df7]/50 text-[#7ba3ff] rounded-full font-medium hover:bg-[#4f7df7]/10 transition-colors duration-300"
+            className="px-10 py-4 border border-[#4f7df7]/50 text-[#7ba3ff] rounded-full font-medium hover:bg-[#4f7df7]/10 transition-colors duration-300"
           >
             Get In Touch
           </a>
         </div>
 
         {/* Scroll indicator */}
-        <div className="mt-20 animate-bounce">
+        <div className="mt-24 animate-bounce">
           <svg
             width="24"
             height="24"
