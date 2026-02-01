@@ -18,7 +18,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <section id="contact" className="relative py-32 px-6 pb-20">
+    <section id="contact" className="relative min-h-screen h-screen overflow-y-auto px-6 flex flex-col items-center justify-center">
       <div className="section-divider mb-20" />
 
       <div
@@ -33,7 +33,7 @@ export default function Contact() {
         }}
       />
 
-      <div ref={ref} className="max-w-2xl mx-auto relative z-10">
+      <div ref={ref} className="max-w-2xl mx-auto relative z-10 w-full py-16">
         <h2
           className={`text-4xl md:text-5xl font-bold text-center mb-4 glow transition-all duration-700 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"

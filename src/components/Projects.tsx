@@ -49,7 +49,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" className="relative py-32 px-6">
+    <section id="projects" className="relative min-h-screen h-screen overflow-y-auto px-6 flex flex-col items-center justify-center">
       <div className="section-divider mb-20" />
 
       {/* Nebula glow */}
@@ -64,7 +64,7 @@ export default function Projects() {
         }}
       />
 
-      <div ref={ref} className="max-w-6xl mx-auto relative z-10">
+      <div ref={ref} className="max-w-6xl mx-auto relative z-10 w-full py-16">
         <h2
           className={`text-4xl md:text-5xl font-bold text-center mb-4 glow transition-all duration-700 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -109,7 +109,7 @@ export default function Projects() {
               <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-[#7ba3ff] transition-colors">
                 {project.title}
               </h3>
-              <p className="text-[#e0e0ff]/60 leading-relaxed mb-6 text-sm">
+              <p className="text-[#e0e0ff]/60 leading-relaxed mb-6 text-sm text-justify">
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-2">

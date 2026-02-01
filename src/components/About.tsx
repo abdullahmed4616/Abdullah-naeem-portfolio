@@ -27,10 +27,10 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" className="relative py-32 px-6">
+    <section id="about" className="relative min-h-screen h-screen overflow-y-auto px-6 flex flex-col items-center justify-center">
       <div className="section-divider mb-20" />
 
-      <div ref={ref} className="max-w-6xl mx-auto">
+      <div ref={ref} className="max-w-6xl mx-auto w-full py-16">
         <h2
           className={`text-4xl md:text-5xl font-bold text-center mb-4 glow transition-all duration-700 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -54,19 +54,19 @@ export default function About() {
             }`}
           >
             <div className="bg-[#0a0a2a]/60 backdrop-blur-sm border border-[#4f7df7]/15 rounded-2xl p-8">
-              <p className="text-[#e0e0ff]/80 leading-relaxed mb-6">
+              <p className="text-[#e0e0ff]/80 leading-relaxed mb-6 text-justify">
                 I am a passionate full-stack developer with a deep love for crafting
                 elegant, performant web applications. With a keen eye for design and a
                 strong foundation in modern technologies, I transform ideas into
                 reality.
               </p>
-              <p className="text-[#e0e0ff]/80 leading-relaxed mb-6">
+              <p className="text-[#e0e0ff]/80 leading-relaxed mb-6 text-justify">
                 My journey in software development has taken me through diverse
                 projects ranging from real-time applications to scalable cloud
                 architectures. I thrive in environments that challenge me to grow
                 and innovate.
               </p>
-              <p className="text-[#e0e0ff]/80 leading-relaxed">
+              <p className="text-[#e0e0ff]/80 leading-relaxed text-justify">
                 When I am not coding, you will find me exploring new technologies,
                 contributing to open-source, or sharing knowledge with the developer
                 community.
